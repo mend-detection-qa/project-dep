@@ -1,18 +1,8 @@
-# Gopkg.toml — dep manifest file
-# This file declares the dependency constraints for the project.
-# Run `dep ensure` to download dependencies into the vendor/ directory.
-# Run `dep ensure -update` to update dependencies within their constraints.
 
-# The [[constraint]] block pins a direct dependency to a specific version.
-# `name`    — the import path of the dependency
-# `version` — a semver version tag to pin to
 [[constraint]]
   name    = "github.com/fatih/color"
   version = "1.7.0"
 
-# [prune] controls which files are removed from vendor/ after fetching.
-# `go-tests = true` removes test files from vendored packages (saves space).
-# `unused-packages = true` removes packages not imported by your code.
 [prune]
   go-tests        = true
   unused-packages = true
